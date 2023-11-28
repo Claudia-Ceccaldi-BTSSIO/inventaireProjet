@@ -48,13 +48,14 @@
       require_once('config.php');
 
 
+
       $search = isset($_GET['search']) ? $_GET['search'] : '';
       if ($search) {
-        $stmt = $conn->prepare("SELECT * FROM materiel WHERE nom LIKE ?");
+        $stmt = $connexion->prepare("SELECT * FROM materiel WHERE nom LIKE ?");
         $likeSearch = "%" . $search . "%";
         $stmt->bind_param("s", $likeSearch);
       } else {
-        $stmt = $conn->prepare("SELECT * FROM materiel");
+        $stmt = $connexion->prepare("SELECT * FROM materiel");
       }
 
       $stmt->execute();
@@ -71,7 +72,7 @@
         echo "</tr>";
       }
       $stmt->close();
-      $conn->close();
+      $connexion->close();
       ?>
     </tbody>
   </table>
