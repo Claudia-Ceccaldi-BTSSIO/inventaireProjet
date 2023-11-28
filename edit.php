@@ -2,13 +2,13 @@
 require_once('config.php');
 
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($connexion->connect_error) {
+    die("Connection failed: " . $connexion->connect_error);
 }
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $stmt = $conn->prepare("SELECT * FROM materiel WHERE id=?");
+    $stmt = $connexion->prepare("SELECT * FROM materiel WHERE id=?");
     $stmt->bind_param("i", $id);
     $stmt->execute();
     $result = $stmt->get_result();
