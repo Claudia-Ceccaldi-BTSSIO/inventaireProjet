@@ -1,0 +1,5 @@
+# Ignorer les fichiers et les répertoires générés par PHP
+/vendor/
+/node_modules/
+/public/uploads/
+/logs/
