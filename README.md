@@ -11,4 +11,5 @@ Ma formation : BTS SIO option SLAM
 - utilisation d'un framework et ajout au projet
 - faire des requêtes SQL mieux sécurisées
 - ajout d'une alerte : fin de stock
+- ajout des boutons modification et supression sur la partie Fiche matériel nomade
 
