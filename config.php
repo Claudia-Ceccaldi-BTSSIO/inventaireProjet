@@ -1,8 +1,8 @@
 <?php
 // Paramètres de connexion à la base de données
 $servername = 'localhost';
-$username = 'defi';
-$password = 'microsoft47';
+$username = 'root';
+$password = '';
 $database = 'parccaf47';
 
 // Connexion à la base de données en utilisant les requêtes préparées
