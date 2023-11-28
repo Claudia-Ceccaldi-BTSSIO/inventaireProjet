@@ -9,7 +9,7 @@ $_description = $_POST['_description'];
 $emplacement = $_POST['emplacement'];
 $annee_uc = $_POST['annee_uc'];
 
-$stmt = $conn->prepare("UPDATE materiel SET num_isiac=?, nom=?, _description=?, emplacement=?, annee_uc=? WHERE id=?");
+$stmt = $connexion->prepare("UPDATE materiel SET num_isiac=?, nom=?, _description=?, emplacement=?, annee_uc=? WHERE id=?");
 $stmt->bind_param("sssisi", $num_isiac, $nom, $_description, $emplacement, $annee_uc, $id);
 
 if ($stmt->execute()) {
@@ -19,4 +19,4 @@ if ($stmt->execute()) {
 }
 
 $stmt->close();
-$conn->close();
+$connexion->close();
