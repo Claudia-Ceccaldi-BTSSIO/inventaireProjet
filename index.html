@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestionnaire Inventaire Caf47</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./CSS/main.css" />
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="parc.php">PARC</a></li>
-        <li><a href="encours.html">Fiche Matériel Nomade</a></li>
-      </ul>
-    </nav>
-    <main>
-      <!--  <div class="image-center">
-        <img src="" alt="Image Centrale" />
-      </div>-->
-    </main>
+    <h1 class="title">Attestation de mise à disposition de matériel nomade</h1>
+
+    <form action="script.php" method="POST" enctype="multipart/form-data">
+      <label for="id_materiel">ID Matériel :</label>
+      <input type="text" id="id_materiel" name="id_materiel" required />
+
+      <label for="isiac">Isiac :</label>
+      <input type="text" id="isiac" name="isiac" required />
+
+      <label for="saisie_select">Saisie dans G@CI :</label>
+      <select id="saisie_select" name="saisie_select">
+        <option value="oui">Oui</option>
+        <option value="non">Non</option>
+      </select>
+
+      <label for="date_creation">Date :</label>
+      <input type="date" id="date_creation" name="date_creation" />
+
+      <label for="type_select">Type :</label>
+      <select id="type_select" name="type_select" required>
+        <option value="emprunt">Emprunt</option>
+        <option value="restitution">Restitution</option>
+      </select>
+
+      <label for="remis">Remis par :</label>
+      <select id="remis" name="remis">
+        <option value="Laurent COULON">Laurent COULON</option>
+        <option value="Frederic LECOMTE">Frederic LECOMTE</option>
+        <option value="Jean-Christophe FOURNIER">
+          Jean-Christophe FOURNIER
+        </option>
+        <option value="Claudia CECCALDI">Claudia CECCALDI</option>
+      </select>
+
+      <label for="receptionne">Réceptionné par :</label>
+      <select id="receptionne" name="receptionne">
+        <option value="Laurent COULON">Laurent COULON</option>
+        <option value="Frederic LECOMTE">Frederic LECOMTE</option>
+        <option value="Jean-Christophe FOURNIER">
+          Jean-Christophe FOURNIER
+        </option>
+        <option value="Claudia CECCALDI">Claudia CECCALDI</option>
+      </select>
+
+      <label for="observation">Observations :</label>
+      <textarea id="observation" name="observation"></textarea><br /><br />
+
+      <input type="submit" value="Envoyer" />
+    </form>
   </body>
 </html>
