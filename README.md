@@ -8,7 +8,7 @@ Ma formation : BTS SIO option SLAM
 - ajout du code de "fichematerielnomade":création de BDD (à modifier plus tard)
 - correction de plusieurs petites erreurs de syntaxe au niveau php (doc PHP / ChatGPT)
 # Les modifications à suivre :
-- utilisation d'un framework et ajout au projet
+- utilisation d'un framework et ajout au projet(Symfony)
 - faire des requêtes SQL mieux sécurisées
 - ajout d'une alerte : fin de stock
 - ajout des boutons modification et supression sur la partie Fiche matériel nomade
