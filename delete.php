@@ -5,7 +5,7 @@ require_once('config.php');
 
 $id = $_GET['id']; // ou $_POST['id'] selon la méthode que vous souhaitez utiliser
 
-$stmt = $conn->prepare("DELETE FROM materiel WHERE id = ?");
+$stmt = $connexion->prepare("DELETE FROM materiel WHERE id = ?");
 $stmt->bind_param("i", $id);
 
 if ($stmt->execute()) {
@@ -15,4 +15,4 @@ if ($stmt->execute()) {
 }
 
 $stmt->close();
-$conn->close();
+$connexion->close();
