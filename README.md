@@ -12,3 +12,7 @@ Ma formation : BTS SIO option SLAM
 - faire des requêtes SQL mieux sécurisées
 - ajout d'une alerte : fin de stock
 - ajout des boutons modification et supression sur la partie Fiche matériel nomade
+- suppression de la page "Accueil"
+- vérification/et/ou/ ajout de filtres aux différents éléments des formulaires
+- modification de la structure de l'application ; modifications des tables SQL (ajout/suppression) + ajout d'une session de connexion
+
