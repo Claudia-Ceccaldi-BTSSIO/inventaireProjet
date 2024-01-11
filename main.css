@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0077b6; /* Fond bleu*/
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333; /* Bleu profond */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav a {
+  color: #ffffff; /* Texte blanc */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8ed4f1; /* Bleu clair pour le survol */
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.image-center img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #95cde5; /* Bordure bleue */
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #2c87c5; /* Fond de l'en-tête bleu profond */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2faff; /* Fond bleu très clair pour les lignes paires */
+}
+
+form {
+  width: 80%;
+  margin: 20px auto;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #95cde5;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #42a85f; /* Bouton vert */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2c8745; /* Vert foncé pour le survol */
+}
+/* ... (styles précédents) ... */
+
+/* Champ de recherche */
+.search-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Bouton de recherche */
+.search-container input[type="submit"] {
+  background-color: #42a85f; /* Bouton vert */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container input[type="submit"]:hover {
+  background-color: #2c8745; /* Vert foncé pour le survol */
+}
+
+/* Styles du tableau */
+table {
+  width: 90%;
+  margin: 30px auto;
+}
+
+table th {
+  padding: 10px;
+  text-align: left;
+  background-color: #2c87c5; /* Bleu profond */
+  color: white;
+}
+
+table td {
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #95cde5; /* Bordure bleue */
+}
+
+/* Styles pour la page de mise à jour */
+.update-form {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #95cde5; /* Bordure bleue */
+  border-radius: 5px;
+  background-color: white;
+}
+
+.update-form input[type="text"],
+.update-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #95cde5;
+}
+
+.update-form input[type="submit"] {
+  background-color: #42a85f; /* Bouton vert */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.update-form input[type="submit"]:hover {
+  background-color: #2c8745; /* Vert foncé pour le survol */
+}
+
+.div {
+  background-color: pink;
+}
+h2 {
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #95cde5; /* Bordure bleue */
+  border-radius: 5px;
+  background-color: white;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #95cde5;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #42a85f; /* Bouton vert */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2c8745; /* Vert foncé pour le survol */
+}
